@@ -11,26 +11,61 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <center>
+</head>
+
+<body>
+  <center>
     <h1>Image Identification Case Study</h1>
     <h2>By Microsoft Azure and Mobilenet Model</h2>
-    <h3> Test image 1</h3>
-    <div id="result1">
-      <img id="img" src="">
-      <h4>Microsoft Azure Result-</h4>
-      <h4>MobileNet Result-</h4>
-      <h4>Result- _____ is more accurate</h4>
-    </div>
-    <h3> Test image 2</h3>
-    <div id="result2">
-      <img id="img" src="">
-      <h4>Microsoft Azure Result-</h4>
-      <h4>MobileNet Result-</h4>
-      <h4>Result- _____ is more accurate</h4>
-    </div>
-  </center>
-  </body>
+    <span id="result1" class="col-md-6 col-sm-6 col-xs-12">
+      <h3> Test image 1</h3>
+      <img id="img" src="img1.jpeg">
+      <h4>Acutal Result- Book</h4>
+      <h4>Microsoft Azure Result- Undefined</h4>
+      <h4>MobileNet Result- Binder</h4>
+      <h4>Result-None is accurate</h4>
+    </span>
 
-  </html>
+    <span id="result2" class="col-md-6 col-sm-6 col-xs-12">
+      <h3> Test image 2</h3>
+      <img id="img" src="img2.jpeg">
+      <h4>Acutal Result- Pencil</h4>
+      <h4>Microsoft Azure Result- Close up of a sink</h4>
+      <h4>MobileNet Result- Ballpoint pen</h4>
+      <h4>Result- None is accurate</h4>
+    </span>
+
+    <span id="result3" class="col-md-6 col-sm-6 col-xs-12">
+      <h3> Test image 3</h3>
+      <img id="img" src="img3.jpeg">
+      <h4>Acutal Result- Rubix's cube</h4>
+      <h4>Microsoft Azure Result- Close up of a keyboard</h4>
+      <h4>MobileNet Result- Buckle</h4>
+      <h4>Result- None is accurate</h4>
+    </span>
+
+    <span id="result4" class="col-md-6 col-sm-6 col-xs-12">
+      <h3> Test image 4</h3>
+      <img id="img" src="img4.jpeg">
+      <h4>Acutal Result- Pen</h4>
+      <h4>Microsoft Azure Result- Pair of headphones</h4>
+      <h4>MobileNet Result- Ballpoint Pen</h4>
+      <h4>Result- Mobilenet is more accurate</h4>
+    </span>
+
+    <span id="result5" class="col-md-6 col-sm-6 col-xs-12">
+      <h3> Test image 5</h3>
+      <img id="img" src="img5.jpeg">
+      <h4>Acutal Result- Comb</h4>
+      <h4>Microsoft Azure Result- Undefined</h4>
+      <h4>MobileNet Result- Vestment</h4>
+      <h4>Result- None is accurate</h4>
+    </span>
+    <div id="ans">
+      <img id="bulb_img" src="blub.gif"><h4>I have tested 5 images out of which Microsoft Azure predicted none correctly and Mobilenet predicted 1 correctly. Therefore, Mobilenet is more accurate</h4>
+      </div>
+
+  </center>
+</body>
+
+</html>
